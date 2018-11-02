@@ -1,0 +1,174 @@
+/*
+Main color : #9A7197
+Font-families :
+- 'Open Sans': 300,400,600,700,800
+- 'Montserrat': 300,400,500,600,700,800,900
+*/
+/* ------RESET------ */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, abbr, address, code, em, img, small, strike, strong, sub, sup, b, u, i, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, nav, section
+
+/* ,ol, ul, li */
+  {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 890px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  position: relative;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+
+::-moz-selection {
+  color: white;
+  background: #333;
+}
+
+::selection {
+  color: white;
+  background: #333;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  width: 1170px;
+  background-color: rgba(37, 36, 36, 0.95);
+  box-shadow: 2px 1px 15px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ------TYPOGRAPHY------ */
+/* Texts */
+p {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+legend {
+  font-weight: 900;
+  color: #d1d8ff;
+}
+
+/* Links */
+a, a:visited {
+  color: #9A7197;
+  text-decoration: none;
+  transition: 0.7s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Titles */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 20px 0;
+  color: #d1d8ff;
+}
+
+
+/* Mise en Forme */
+
+textarea {
+  resize: none;
+}
+
+header h1 {
+  text-align: center;
+}
+
+label {
+  padding: 10px;
+}
+
+.row {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+sup {
+  color: #b9bfdc;
+}
+
+.instructions {
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-weight: 100;
+  width: 90%;
+}
+
+form {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+fieldset {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: rgba(72, 71, 71, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#firstName, #lastName{
+  width: 150px;
+}
+#email, #birthDate {
+  width: 200px;
+}
+
+.questionnaire-box {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 13px;
+  margin-top: 5px;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.questionnaire-box label{
+  font-weight: 300;
+}
+
+.questionnaire-box p:nth-child(1){
+  margin-right: 100px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: auto;
+  border: none;
+  outline: none;
+  margin-top: 40px;
+  font-size: 1.3rem;
+  background: #d1d8ff;
+  color: #333;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  background: rgba(14, 14, 14, 0.9);
+  color: white;
+  cursor: pointer;
+}

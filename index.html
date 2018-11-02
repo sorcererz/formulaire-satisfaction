@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Enquête de satisfaction employé 2018</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+  <section class="container">
+    <header>
+      <h1>Enquête de satisfaction employé</h1>
+      <p class="instructions">Comme vous le savez (ou pas, pour les nouveaux) c'est l'heure de notre questionnaire annuel de satisfaction du personnel. Rassurez vous cela ne prendra qu'un instant, nous vous demandons juste de répondre en toute honnêteté.</p>
+    </header>
+    <BR>
+    <BR>
+    <div class="background">
+      <form class="custom-form" action="#" method="post">
+        <fieldset>
+          <legend>Identification</legend>
+          <div class="row">
+            <p>
+              <label for="firstName">Prénom<sup>*</sup>:
+                <input type="text" name="firstName" id="firstName" placeholder="ex : Gertrude" required></label>
+
+              <label for="lastName">Nom<sup>*</sup> :
+                <input type="text" name="lastName" id="lastName" placeholder="ex : Delarue" required></label>
+
+              <label for="email">Email<sup>*</sup> :
+                <input type="email" name="email" id="email" placeholder="ex : gertrude.delarue@mail.com" required></label>
+            </p>
+          </div>
+          <p>
+            <label for="gender">Genre :
+              <select name="gender">
+                <option value="genderChoice" selected disabled>Votre genre</option>
+                <option value="woman">Femme</option>
+                <option value="man">Homme</option>
+                <option value="other">Autre</option>
+              </select>
+            </label>
+
+            <label for="birth">Date de naissance :
+              <input type="date" name="birth" id="birthDate"></label>
+          </p>
+
+          <br>
+          <br>
+          <legend>Questionnaire</legend>
+          <div class="questionnaire-box">
+            <p>
+              <span class="italic">Satisfait de travailler dans l'entreprise ?</span></br>
+              <input type="radio" name="satisfaction" value="verySatisfied" id="verySatisfied">
+              <label for="verySatisfied">Très satisfait</label></br>
+              <input type="radio" name="satisfaction" value="satisfied" id="satisfied">
+              <label for="satisfied">Satisfait</label></br>
+              <input type="radio" name="satisfaction" value="slightlySatisfied" id="slightlySatisfied">
+              <label for="slightlySatisfied">Peu satisfait</label></br>
+              <input type="radio" name="satisfaction" value="notSatisfied" id="notSatisfied">
+              <label for="notSatisfied">Non satisfait</label></br>
+            </p>
+            <p>
+              <span class="italic">Si non ou peu satisfait, pourquoi ?</span></br>
+              <input type="checkbox" name="schedule" id="schedule">
+              <label for="schedule">Horaires</label></br>
+              <input type="checkbox" name="salary" id="salary">
+              <label for="salary">Salaire</label></br>
+              <input type="checkbox" name="locals" id="locals">
+              <label for="locals">Locaux</label></br>
+              <input type="checkbox" name="organisation" id="organisation">
+              <label for="organisation">Organisation</label></br>
+            </p>
+          </div>
+          <br>
+
+
+
+          <p>
+            <legend>Avez-vous des remarques ?</legend>
+            <br>
+            <textarea name="message" rows="7" cols="110" id="message"></textarea>
+          </p>
+
+
+          <input type="submit" name="sendForm" value="Envoyer le formulaire">
+        </fieldset>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
